@@ -5,12 +5,16 @@
       "PackagePath": "staticwebassets\\ExpenseDiary.bundle.scp.css"
     },
     {
-      "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\add.gif",
+      "PackagePath": "staticwebassets\\add.gif"
     },
     {
-      "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\add.png",
+      "PackagePath": "staticwebassets\\add.png"
+    },
+    {
+      "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\js\\site.js",
@@ -243,6 +247,14 @@
     {
       "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\tabicon.png",
+      "PackagePath": "staticwebassets\\tabicon.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ExpenseDiary.Microsoft.AspNetCore.StaticWebAssets.props",

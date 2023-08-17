@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2qBVorPLBlCKC7PnaeUSsxYGt4r31+BOyYE5ZR34O/4=",
+  "Hash": "WS5XeiLrk4W502JUN8EywLbaL5nUetbbJ4E/k0ZTlEU=",
   "Source": "ExpenseDiary",
   "BasePath": "_content/ExpenseDiary",
   "Mode": "Default",
@@ -51,6 +51,40 @@
       "OriginalItemSpec": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ExpenseDiary.bundle.scp.css"
     },
     {
+      "Identity": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\add.gif",
+      "SourceId": "ExpenseDiary",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\",
+      "BasePath": "_content/ExpenseDiary",
+      "RelativePath": "add.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\add.gif"
+    },
+    {
+      "Identity": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\add.png",
+      "SourceId": "ExpenseDiary",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\",
+      "BasePath": "_content/ExpenseDiary",
+      "RelativePath": "add.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\add.png"
+    },
+    {
       "Identity": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\css\\site.css",
       "SourceId": "ExpenseDiary",
       "SourceType": "Discovered",
@@ -66,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\favicon.ico",
-      "SourceId": "ExpenseDiary",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\",
-      "BasePath": "_content/ExpenseDiary",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\js\\site.js",
@@ -1069,6 +1086,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\logo.png",
+      "SourceId": "ExpenseDiary",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\",
+      "BasePath": "_content/ExpenseDiary",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
+    },
+    {
+      "Identity": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\tabicon.png",
+      "SourceId": "ExpenseDiary",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\STAR\\ExpenseDiary\\ExpenseDiary\\wwwroot\\",
+      "BasePath": "_content/ExpenseDiary",
+      "RelativePath": "tabicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\tabicon.png"
     }
   ]
 }

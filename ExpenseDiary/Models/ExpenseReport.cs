@@ -10,14 +10,17 @@ namespace ExpenseDiary.Models
         [Required]
         public string ItemName { get; set; }
 
-        [Required]
+
         [DataType(DataType.Currency)]
         [Column(TypeName ="decimal(10,2)")]
+        [DisplayFormat(DataFormatString = "")]
+        [Required]
         public decimal Amount { get; set; }
 
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString ="{0:MM/dd/yyyy}",ApplyFormatInEditMode =true)]
-        [Required]
+
+        [DataType(DataType.Date)]   
+        //[DisplayFormat(DataFormatString ="{0:MM/dd/yyyy}",ApplyFormatInEditMode =true)]
+        [DisplayFormat(DataFormatString = "{0:MMM-dd-yy}")]
         public DateTime ExpenseDate { get; set; }=DateTime.Now;
 
         [Required]
