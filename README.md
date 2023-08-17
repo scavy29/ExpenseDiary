@@ -1,4 +1,3 @@
-# ExpenseDiary
 <h1>Feature to Add</h1>
 <ul>
   <li>Customize the Table</li>
