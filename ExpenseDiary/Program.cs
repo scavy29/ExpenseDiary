@@ -6,10 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ExpenseDBContext>(options=>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+options.UseSqlServer(builder.Configuration.GetConnectionString("You Connection Strings")));
 
 //Register Syncfusion License
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBPh8sVXJ2S0R+WVpFdEBBXHxAd1p/VWJYdVt5flBPcDwsT3RfQF5jQX9UdkJiWHxXd3dURg==\r\n");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Your License Key");
 
 var app = builder.Build();
 
