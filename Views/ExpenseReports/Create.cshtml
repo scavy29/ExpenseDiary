@@ -1,0 +1,54 @@
+﻿@model ExpenseDiary.Models.ExpenseReport
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Add an Expense</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" autocomplete="off">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                @*
+                <label asp-for="ItemName" class="control-label"></label>
+                <input asp-for="ItemName" class="form-control" />
+                *@
+                <ejs-textbox id="itemname" placeholder="Item_Name" cssClass="e-primary"></ejs-textbox>
+                <span asp-validation-for="ItemName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @*
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                *@
+                <ejs-textbox id="amount" placeholder="Amount" cssClass="e-primary"></ejs-textbox>
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @*
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                *@
+                <ejs-textbox id="category" placeholder="Category" cssClass="e-primary"></ejs-textbox>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                @* <input type="submit" />*@
+                <ejs-button id="element" content="Add" cssClass="e-info" typeof="submit">
+                </ejs-button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-10">
+    <a asp-action="Index">
+        Back
+    </a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,115 @@
+﻿@model IEnumerable<ExpenseDiary.Models.ExpenseReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Expense History</h1>
+
+
+<p>
+    <a asp-action="Create">
+        <img src="~/add.gif"  style="border-radius:100px;"/>
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpenseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpenseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.ItemId" style="text-decoration:none;color:black;"><i class="fa-regular fa-pen-to-square"></i></a>
+                @*<a asp-action="Details" asp-route-id="@item.ItemId">Details</a>*@
+                <a>|</a>
+                    <a asp-action="Delete" asp-route-id="@item.ItemId" style="text-decoration:none;color:black;"><i class="fa-regular fa-trash-can"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<br />
+
+<!-- Add a button for CSV export -->
+<button id="downloadCsvButton" style="border-radius:10px;border:1px thin black;background-color:white;width:20%;">Download History</button>
+
+<!-- Add a message element to display "CSV Downloaded" -->
+<div id="csvMessage" style="display: none;"></div>
+
+<!-- Your table -->
+<table class="table">
+    <!-- ... Your table code ... -->
+</table>
+
+<script>
+    // Function to handle CSV export
+    function exportToCsv() {
+        // Show loading effect
+        document.getElementById("csvMessage").style.display = "none";
+        document.getElementById("downloadCsvButton").innerText = "Exporting...";
+
+        // Prepare the data for CSV
+        let data = "Item Name,Amount,Expense Date,Category\n"; // CSV header row
+        let tableRows = document.querySelectorAll(".table tbody tr");
+
+        tableRows.forEach(function (row) {
+            let rowData = [];
+            let cells = row.querySelectorAll("td:not(:last-child)"); // Exclude the last column
+            cells.forEach(function (cell) {
+                rowData.push(cell.textContent.trim());
+            });
+            data += rowData.join(",") + "\n";
+        });
+
+        // Create a Blob with the CSV data
+        let blob = new Blob([data], { type: "text/csv;charset=utf-8;" });
+
+        // Create a temporary link and trigger the download
+        let link = document.createElement("a");
+        if (link.download !== undefined) {
+            let url = URL.createObjectURL(blob);
+            link.setAttribute("href", url);
+            link.setAttribute("download", "expense_data.csv");
+            link.style.visibility = "hidden";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // Hide loading effect and show message
+            document.getElementById("csvMessage").style.display = "block";
+            document.getElementById("downloadCsvButton").innerText = "Downloaded";
+        }
+    }
+
+    // Attach the export function to the button click event
+    document.getElementById("downloadCsvButton").addEventListener("click", exportToCsv);
+</script>
+
